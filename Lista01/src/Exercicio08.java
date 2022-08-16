@@ -11,5 +11,6 @@ public class Exercicio08 {
 
         System.out.println("Seu salário bruto deste mês deve ser igual a: " + (sal * horas));
 
+        entrada.close();
     }
 }

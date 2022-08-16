@@ -22,6 +22,6 @@ public class Exercicio14 {
         System.out.println("Você deve ao seu sindicato: R$" + sindicato);
         System.out.println("Seu salário líquido é de: R$" + salLiquido);
 
-
+        entrada.close();
     }
 }

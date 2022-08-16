@@ -8,5 +8,7 @@ public class Exercicio11 {
         float altura = entrada.nextFloat();
         float pesoIdeal = (float) ((72.7*altura)-58);
         System.out.println("Seu peso ideal é: "+pesoIdeal);
+
+        entrada.close();
     }
 }

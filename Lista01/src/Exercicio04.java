@@ -16,5 +16,6 @@ public class Exercicio04 {
 
         System.out.println("A média é: " + ((nota1 + nota2 + nota3 + nota4) /4));
 
+        entrada.close();
     }
 }

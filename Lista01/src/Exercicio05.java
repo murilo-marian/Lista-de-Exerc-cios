@@ -7,5 +7,7 @@ public class Exercicio05 {
         System.out.println("Digite os metros a serem convertidos para centímetros");
         float metros = entrada.nextFloat();
         System.out.println(metros + " são equivalentes a " + (metros*100) + " centímetros");
+
+        entrada.close();
     }
 }

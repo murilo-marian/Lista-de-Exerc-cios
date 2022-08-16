@@ -15,5 +15,7 @@ public class Exercicio13 {
         } else {
             System.out.println("Sem multas, menos de 50 quilos pescados");
         }
+
+        entrada.close();
     }
 }

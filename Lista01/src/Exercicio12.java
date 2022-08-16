@@ -20,5 +20,7 @@ public class Exercicio12 {
         }
 
         System.out.println("Seu peso ideal é: " + pesoIdeal);
+
+        entrada.close();
     }
 }

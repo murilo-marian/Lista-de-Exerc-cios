@@ -11,5 +11,7 @@ public class Exercicio16 {
 
         System.out.println("Comprando apenas latas de 18 litros, se devem comprar "+ latas +" latas");
         System.out.println("Comprando apenas galões de 3,6 litros, se devem comprar " + galoes +" galões");
+
+        entrada.close();
     }
 }

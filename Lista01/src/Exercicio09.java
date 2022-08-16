@@ -8,5 +8,7 @@ public class Exercicio09 {
         float tempFahrenheit = entrada.nextFloat();
         System.out.println("A temperatura equivalente em Celsius é: " + (5*((tempFahrenheit-32)/9)) );
 
+        entrada.close();
+
     }
 }

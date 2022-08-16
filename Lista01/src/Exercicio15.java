@@ -9,5 +9,7 @@ public class Exercicio15 {
         int latas = (int) Math.ceil((area / 54));
 
         System.out.println("Serão necessárias " + latas + " latas, que custarão R$" + (latas * 80));
+
+        entrada.close();
     }
 }

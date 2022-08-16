@@ -7,5 +7,7 @@ public class Exercicio07 {
         System.out.println("Digite o valor do lado do quadrado");
         float lado = entrada.nextFloat();
         System.out.println("A área do quadrado é de: " + (lado * lado));
+
+        entrada.close();
     }
 }
