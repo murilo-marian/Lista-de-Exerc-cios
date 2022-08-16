@@ -9,7 +9,7 @@ public class Exercicio06 {
         float area = (float) (Math.PI * Math.pow(raio, 2));
         System.out.printf("%.2f", area);
 
-        entrada.close();s
+        entrada.close();
 
     }
 }

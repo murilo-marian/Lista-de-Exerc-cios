@@ -14,7 +14,7 @@ public class Exercicio14 {
         float ir = (float) (salBruto * 0.11);
         float inss = (float) (salBruto * 0.08);
         float sindicato = (float) (salBruto * 0.05);
-        float salLiquido = (float) (salBruto - ir - inss - sindicato);
+        float salLiquido = (salBruto - ir - inss - sindicato);
 
         System.out.println("O seu salário bruto é de: R$" + salBruto);
         System.out.println("O seu imposto de renda é de: R$"+ ir);
