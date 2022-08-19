@@ -4,43 +4,45 @@ public class Exercicio28 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Telefonou para a vítima?");
-        String telefone = entrada.nextLine();
-        System.out.println("Esteve no local do crime?");
-        String local = entrada.nextLine();
-        System.out.println("Mora perto da vítima?");
-        String moradia = entrada.nextLine();
-        System.out.println("Devia para a vítima?");
-        String agiota = entrada.nextLine();
-        System.out.println("Trabalhava com a vítima?");
-        String trabalho = entrada.next();
+        int num1 = entrada.nextInt();
+        int num2 = entrada.nextInt();
 
-        int contagem = 0;
+        System.out.println("Qual operação deseja realizar? (soma/subtrair/dividir/multiplicar)");
+        entrada.nextLine();
+        String operacao = entrada.nextLine();
 
-        if (telefone == "y") {
-            ++contagem;
-        }
-        if (local == "y") {
-            ++contagem;
-        }
-        if (moradia == "y") {
-            ++contagem;
-        }
-        if (agiota == "y") {
-            ++contagem;
-        }
-        if (trabalho == "y") {
-            ++contagem;
-        }
+        float resultado;
 
-        if (contagem == 2) {
-            System.out.println("suspeito");
-        } else if (contagem == 3 || contagem == 4) {
-            System.out.println("Cúmplice");
-        } else if (contagem == 5) {
-            System.out.println("Assassino");
+        if (operacao.equals("soma")) {
+            resultado = num1 + num2;
+        } else if (operacao.equals("subtrair")) {
+            resultado = num1 - num2;
+        } else if (operacao.equals("dividir")) {
+            resultado = num1/num2;
         } else {
-            System.out.println("Inocente");
+            resultado = num1*num2;
+        }
+
+        System.out.println(resultado);
+
+        if (resultado % 2 == 0) {
+            System.out.println("Número par");
+        } else {
+            System.out.println("Número ímpar");
+        }
+
+        if (resultado > 0) {
+            System.out.println("Positivo");
+        } else if (resultado < 0) {
+            System.out.println("Negativo");
+        } else {
+            System.out.println("Zero");
+        }
+
+        if (Math.ceil(resultado) == resultado) {
+            System.out.println("Número Inteiro");
+        } else {
+            System.out.println("Número decimal");
         }
     }
 }
