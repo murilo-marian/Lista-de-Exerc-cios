@@ -17,9 +17,9 @@ public class Exercicio09 {
         float pesoIdeal;
 
         if (sexo.toLowerCase().equals("m")) {
-            pesoIdeal = (float) ((72.7 * altura) - 58);
+            pesoIdeal = ((72.7f * altura) - 58);
         } else {
-            pesoIdeal = (float) ((62.1 * altura) - 44.7);
+            pesoIdeal = ((62.1f * altura) - 44.7f);
         }
         System.out.println("Seu peso ideal é: " + pesoIdeal);
         if (peso > pesoIdeal) {
